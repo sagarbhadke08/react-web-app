@@ -4,9 +4,9 @@ import './ExpenseItem.css';
 
 function ExpenseItem(props) {
 
-  const expenseDate = new Date(2026 , 5, 15);
-  const expenseTitle = 'Car Insurance';
-  const expenseAmount = '12000000000';
+  // const expenseDate = new Date(2026 , 5, 15);
+  // const expenseTitle = 'Car Insurance';
+  // const expenseAmount = '12000000000';
 
 
   return (
