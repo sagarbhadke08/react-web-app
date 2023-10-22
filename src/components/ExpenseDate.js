@@ -2,7 +2,7 @@ import './ExpenseDate.css';
 
 
 function ExpenseDate(props) {
-  const month = props.date.toLocaleString('en-GB', { month: 'long' });
+  const month = props.date.toLocaleString('en-US', { month: 'long' });
   const day = props.date.toLocaleString("en-US", { day: "2-digit" });
   const year = props.date.getFullYear();
   //? but our new components needs a prop which is "date" to extract that date and format it
