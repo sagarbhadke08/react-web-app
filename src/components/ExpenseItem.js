@@ -1,4 +1,5 @@
 import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
 import "./ExpenseItem.css";
 
 function ExpenseItem(props) {
@@ -13,13 +14,13 @@ function ExpenseItem(props) {
   //?If u have no content between tags then we can directly use self closing tag. <ExpenseDate/>
   //* I can make new compoennt as date and from there i can use it here. lets do it
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
         <h2>{props.title}</h2>
         <div className="expense-item__price">${props.amount}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 
